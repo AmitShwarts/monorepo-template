@@ -1,7 +1,6 @@
 name: Dependabot auto approve and merge
 
-# To activate this workflow uncommen the next line, and define the secret TOKEN_GITHUB with the correct permissions
-# on: pull_request
+on: pull_request
 
 env:
   TOKEN: ${{ secrets.TOKEN_GITHUB }} # 

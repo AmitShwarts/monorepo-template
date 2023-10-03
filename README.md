@@ -15,7 +15,8 @@ Will open PRs to update npm and github-worflows dependencies versions.
 1. **Build:** for each package
 2. **Lint:** from root
 3. **Test:** from root
-4. **Dependabot auto approve and merge:** Will allow dependabot to approve and merge his prs. This workflow is not enabled by default.<br/>
+4. **Dependabot auto approve and merge:** Will allow dependabot to approve and merge his prs.<br/>
+To make this workflow work, please define the secret `TOKEN_GITHUB` with the correct permissions<br/>
 Go [here](./.github/workflows/dependabot-auto-approve-merge.yml) and follow the instructions in order to enable it.
 
 ## Husky:
