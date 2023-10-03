@@ -1,0 +1,12 @@
+{
+  "verbose": false,
+  "ignore": ["**/*.spec.ts"],
+  "execMap": {
+    "ts": "ts-node"
+  },
+  "restartable": "r",
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": "8080"
+  }
+}
