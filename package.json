@@ -22,7 +22,7 @@
     "check-yarn-lock": "ts-node scripts/check-yarn-lock"
   },
   "dependencies": {
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   },
   "devDependencies": {
     "@types/node": "20.8.2",
