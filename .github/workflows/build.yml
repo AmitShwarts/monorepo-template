@@ -19,7 +19,7 @@ jobs:
       run: echo "node_version=$(cat .nvmrc) >> $GITHUB_OUTPUT"
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ steps.node_version.outputs.node_version }}
 
@@ -27,7 +27,7 @@ jobs:
       id: yarn-cache-dir-path
       run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
 
-    - uses: actions/cache@v3
+    - uses: actions/cache@v4
       id: yarn-cache
       with:
         path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
