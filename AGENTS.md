@@ -8,7 +8,7 @@ This is a TypeScript monorepo template using **Yarn 3.6.3** (Berry) with workspa
 
 ### Node version
 
-The project requires **Node.js 22.22.0** (pinned in `.nvmrc`). Use `nvm use` to activate it. The default nvm alias should already be set to 22.22.0.
+The project requires **Node.js 24.14.0** (pinned in `.nvmrc`). Use `nvm use` to activate it. The default nvm alias should already be set to 24.14.0.
 
 ### Running services
 
