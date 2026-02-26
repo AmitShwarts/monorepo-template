@@ -8,7 +8,7 @@ This is a TypeScript monorepo template using **Yarn 3.6.3** (Berry) with workspa
 
 ### Node version
 
-The project requires **Node.js 18.18.0** (pinned in `.nvmrc`). Use `nvm use` to activate it. The default nvm alias should already be set to 18.18.0.
+The project requires **Node.js 22.22.0** (pinned in `.nvmrc`). Use `nvm use` to activate it. The default nvm alias should already be set to 22.22.0.
 
 ### Running services
 
@@ -35,5 +35,5 @@ See `package.json` scripts. Key ones:
 
 ### Gotchas
 
-- The ESLint config (`.eslintrc.js`) conditionally enforces `no-debugger` and `no-console` rules only when `PRE_COMMIT=true` is set. During normal development these rules are off.
+- ESLint uses flat config (`eslint.config.mjs`). The `no-debugger` and `no-console` rules are conditionally enforced only when `PRE_COMMIT=true` is set. During normal development these rules are off. `reportUnusedDisableDirectives` is set to `'off'` so the inline `eslint-disable` comments for `no-console` don't produce warnings outside pre-commit.
 - Yarn 3 is managed via corepack (`corepack enable`); the Yarn binary is vendored at `.yarn/releases/yarn-3.6.3.cjs`.
