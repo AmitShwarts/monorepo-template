@@ -44,7 +44,7 @@ const getPackagesWithChangedDeps = async (stagedPackageJsonsPaths: string[]): Pr
       if (await hasChangedDeps({lastComittedFile, stagedFile})) {
         packagesWithChangedDeps.push(path);
       }
-    })
+    }),
   );
 
   return packagesWithChangedDeps;
