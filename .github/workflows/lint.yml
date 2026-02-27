@@ -16,7 +16,7 @@ jobs:
 
     - name: Determine Node.js version from .nvmrc
       id: node_version
-      run: echo "node_version=$(cat .nvmrc) >> $GITHUB_OUTPUT"
+      run: echo "node_version=$(cat .nvmrc)" >> $GITHUB_OUTPUT
 
     - name: Set up Node.js
       uses: actions/setup-node@v4
